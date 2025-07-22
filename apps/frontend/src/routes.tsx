@@ -5,6 +5,10 @@ import Jonas from "./pages/Jonas";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard";
 import John from "./pages/John";
+import Menu from "./pages/Menu";
+import Paises from "./pages/Paises";
+import Ciudades from "./pages/Ciudades";
+import ReporteCiudadesPorPais from "./pages/CiudadesPorPais";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +27,20 @@ const router = createBrowserRouter([
         element: <Jonas />,
       },
       {
-        path: "/john",
-        element: <John />,
+        path: "/menu",
+        element: <Menu />,
+      },
+      {
+        path: "/menu/Paises",
+        element: <Paises />,
+      },
+      {
+        path: "/menu/Ciudades",
+        element: <Ciudades />,
+      },
+      {
+        path: "/menu/Reportes",
+        element: <ReporteCiudadesPorPais />,
       },
     ],
   },

@@ -40,6 +40,28 @@ export const products = mysqlTable('products', {
     price: int('price'),
 });
 
+
+// Tabla paises
+export const paises = mysqlTable('paises', {
+    id: int('id').primaryKey().autoincrement(),
+    name: varchar('name', { length: 100 }),
+});
+
+// Tabla ciudades
+export const ciudades = mysqlTable('ciudades', {
+    id: int('id').primaryKey().autoincrement(),
+    name: varchar('name', { length: 100 }),
+    id_pais: int('id_pais'),
+});
+
+
+// Tabla Reportes
+export const reporteCiudadesPorPais = mysqlTable('reporte_ciudades_por_pais', {
+  id_pais: int('id_pais').primaryKey(),
+  cantidad_ciudades: int('cantidad_ciudades').default(0),
+});
+
+
 // Tabla permissions
 export const permissions = mysqlTable('permissions', {
     id: int('id').primaryKey().autoincrement(),
@@ -105,3 +127,4 @@ export const sales_details = mysqlTable('sales_details', {
     idx_product: index('fk_sales_details_products1_idx').on(table.product_id),
 }));
   
+
