@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import api from "../libs/api"; // Instancia de Axios para hacer peticiones al backend
 import { Pencil, Trash2 } from "lucide-react"; // Iconos para botones
+import { Link } from "react-router-dom";
 
 // Interfaz que define la estructura de un país
 interface PaisInterface {
@@ -11,6 +12,7 @@ interface PaisInterface {
 
 // Componente principal que maneja la interfaz de países
 const Paises = () => {
+    
     // Estados del componente
     const [paisesList, setPaisesList] = useState<PaisInterface[]>([]); // Lista de países
     const [form, setForm] = useState({ name: "" }); // Formulario para agregar/editar país
@@ -97,7 +99,16 @@ const Paises = () => {
 
     // Lo que retorna el componente: la interfaz
     return (
+        
+
+
         <div className="p-6 bg-gray-900 text-white min-h-screen">
+            <Link
+                to="/menu"
+                className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded transition-colors duration-300"
+            >
+                Ir a Menu
+            </Link>
             <h1 className="text-4xl font-bold mb-8 text-center">Gestión de Países</h1>
 
             {/* Formulario para agregar o editar */}

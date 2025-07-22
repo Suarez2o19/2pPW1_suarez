@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "../libs/api";
 import { Pencil, Trash2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Ciudad {
     id: number;
@@ -99,6 +100,12 @@ const Ciudades = () => {
 
     return (
         <div className="min-h-screen bg-gray-900 text-white px-6 py-8 font-sans">
+            <Link
+                to="/menu"
+                className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded transition-colors duration-300"
+            >
+                Ir a Menu
+            </Link>
             <h1 className="text-4xl font-bold text-center mb-10">Gestión de Ciudades</h1>
 
             <form

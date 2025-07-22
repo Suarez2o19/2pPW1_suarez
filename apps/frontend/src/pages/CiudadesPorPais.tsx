@@ -1,5 +1,6 @@
-    import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import api from "../libs/api";
+import { Link } from "react-router-dom";
 
 interface ReporteInterface {
   name: string;
@@ -24,6 +25,16 @@ const ReporteCiudadesPorPais = () => {
 
   return (
     <div className="p-6 bg-gray-900 text-white min-h-screen font-sans">
+      <div className="p-8 flex flex-wrap gap-4 justify-center bg-gray-900 rounded-lg shadow-md">
+        <Link
+        to="/menu"
+        className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded transition-colors duration-300 "
+        >
+        Ir a Menu
+        </Link>
+      </div>
+      
+      
       <h1 className="text-4xl font-bold mb-8 text-center">
         Reporte: Cantidad de Ciudades por País
       </h1>
