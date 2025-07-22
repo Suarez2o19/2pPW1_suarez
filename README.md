@@ -1,11 +1,6 @@
-¡Claro! Aquí tenés un `README.md` bien formateado en Markdown para que puedas copiar y pegar directamente en [tu repositorio en GitHub](https://github.com/Suarez2o19/paises-ciuadades/edit/main/README.md):
-
-````markdown
 # 🌍 Proyecto CRUD: Países y Ciudades
 
 Este proyecto es una aplicación web que permite gestionar **países y ciudades** mediante operaciones CRUD (crear, leer, actualizar, eliminar), utilizando un backend con Node.js y un frontend con React.
-
----
 
 ## 🚀 Instalación y Ejecución
 
@@ -28,19 +23,11 @@ npm install
 npm run dev
 ```
 
-⚠️ Asegúrate de tener configurada la base de datos correctamente (MySQL) con los campos requeridos: `createdAt`, `updatedAt`, claves foráneas, etc.
-
----
-
 ## 🛠️ Funcionalidades Principales
 
 * Registrar países y ciudades.
 * Validaciones para evitar duplicados (ej. no repetir una ciudad en el mismo país).
 * Impide eliminar países que tengan ciudades asociadas.
-* Ordenamiento de datos por nombre o fecha de creación.
-* Mensajes visuales de éxito y error.
-
----
 
 ## 🧩 Módulos CRUD Implementados
 
@@ -62,13 +49,11 @@ npm run dev
 
 ## 📄 Reporte
 
-El sistema genera un reporte que muestra todos los países junto con sus respectivas ciudades.
+El sistema genera un reporte que muestra todos los países junto con la cantidad de ciudades que tiene.
 
 🔗 Para acceder al reporte:
 
 * Ir a la opción **"Ver Reporte"** en el menú principal.
-* O ingresar directamente a:
-  [http://localhost:3000/reporte](http://localhost:3000/reporte)
 
 ---
 
@@ -83,10 +68,3 @@ El sistema genera un reporte que muestra todos los países junto con sus respect
 
 📁 **Repositorio:**
 [https://github.com/Suarez2o19/paises-ciuadades](https://github.com/Suarez2o19/paises-ciuadades)
-
-```
-
-🔧 Asegurate de que el enlace sea correcto y que la URL del proyecto coincida con el nombre real del repositorio (`paises-ciuadades` tiene un error de tipeo si debería ser "ciudades", pero si ese es el nombre real, está bien).
-
-¿Querés que lo corrijamos por "paises-ciudades" o lo dejamos así?
-```
