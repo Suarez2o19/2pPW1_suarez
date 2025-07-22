@@ -17,7 +17,7 @@ cd paises-ciudades
 npm install
 ```
 
-### 3. Ejecutar la aplicación
+### 3. Ejecutar la aplicación (en frontend y backend)
 
 ```bash
 npm run dev
