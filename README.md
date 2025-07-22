@@ -7,8 +7,8 @@ Este proyecto es una aplicación web que permite gestionar **países y ciudades*
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/Suarez2o19/paises-ciuadades.git
-cd paises-ciuadades
+git clone https://github.com/Suarez2o19/paises-ciudades.git
+cd paises-ciudades
 ````
 
 ### 2. Instalar dependencias
@@ -67,4 +67,4 @@ El sistema genera un reporte que muestra todos los países junto con la cantidad
 ---
 
 📁 **Repositorio:**
-[https://github.com/Suarez2o19/paises-ciuadades](https://github.com/Suarez2o19/paises-ciuadades)
+[https://github.com/Suarez2o19/paises-ciuadades](https://github.com/Suarez2o19/paises-ciudades)
